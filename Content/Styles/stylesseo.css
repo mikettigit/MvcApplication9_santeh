@@ -1,0 +1,72 @@
+div.conteiner {
+	text-align: justify;
+}
+h2.seo_h2 {
+	text-align: center; font-weight: bold;
+}
+h3.seo_h3 {
+	text-align: center; font-weight: bold;
+}
+div.zagalovok {
+	margin: 10px 0px; text-align: center; color: rgb(63, 63, 63); font-size: 19px; font-weight: bold;
+}
+div.zagalovok1 {
+	margin: 10px 0px; text-align: center; font-size: 15px; font-weight: bold;
+}
+div.zagalovok2 {
+	margin: 10px 0px; text-align: center; font-size: 25px;
+}
+div.blok {
+	background: linear-gradient(rgb(107, 165, 213), rgb(8, 97, 170)); margin: 15px 0px; padding: 5px 15px; border-radius: 13px; text-align: left; font-size: 14px; font-weight: bold; box-shadow: 0px 2px 4px rgba(0,0,0,0.5); -webkit-border-radius: 13px; -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .5); -pie-background: linear-gradient(#6BA5D5 , #0861AA); behavior: url(/g/pie//pie.htc); -moz-border-radius: 13px; -khtml-border-radius: 13px; -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+div.blok1 {
+	text-align: left; font-style: italic; font-weight: bold;
+}
+/*li.seo_li {
+	background: url("seo_li.png") no-repeat left; padding: 1px 0px 1px 22px; list-style-type: none;
+}*/
+img.seo_img {
+	margin: 2px 10px 0px 0px; float: left;
+}
+img.seo_img1 {
+	margin: 5px 0px 0px 12px; border: 2px solid rgb(255, 255, 255); border-image: none; float: right;
+}
+img.seo_img2 {
+	border: 2px solid rgb(255, 255, 255); border-image: none;
+}
+a.bk {
+	background: linear-gradient(rgb(159, 205, 77), rgb(9, 173, 85)); margin: 10px 2px; padding: 9px; border-radius: 20px; border: 2px solid rgb(255, 255, 255); border-image: none; width: 260px; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; text-decoration: none; display: inline-block; text-shadow: 0px 0px 1px #000000; -webkit-border-radius: 20px; -pie-background: linear-gradient(#9FCD4D , #09AD55); behavior: url(/g/pie//pie.htc); -moz-border-radius: 20px; -khtml-border-radius: 20px;
+}
+a.bk:hover {
+	background: linear-gradient(rgb(107, 165, 213), rgb(8, 97, 170)); -pie-background: linear-gradient(#6BA5D5 , #0861AA); behavior: url(/g/pie/pie.htc);
+}
+a.bk1 {
+	color: rgb(189, 234, 105); font-style: italic;
+}
+.quote {
+	margin: 0px auto; padding: 10px; border-radius: 10px; border: 1px solid rgb(147, 194, 100); border-image: none; text-align: center; font-size: 14px;
+}
+.quote2 {
+	margin: 0px auto; padding: 10px; border-radius: 10px; border: 1px solid rgb(147, 194, 100); border-image: none; font-size: 14px;
+}
+.list {
+	list-style: none;
+}
+ul.list {
+	padding: 0px;
+}
+ul.list > li {
+	background: url("mark.png") no-repeat 0px 5px; padding-left: 25px; margin-bottom: 10px; min-height: 25px;
+}
+.zag1 {
+	font-size: 14px;
+}
+.zag2 {
+	text-align: center; font-size: 16px;
+}
+.quote3 {
+	padding-left: 15px; font-size: 15px;
+}
+.cena {
+	color: rgb(231, 71, 50); font-weight: bold;
+}

@@ -1,0 +1,21 @@
+html body .decor-edit-block-body {
+	color: rgb(102, 102, 102); line-height: 1.5; font-size: 15px; margin-bottom: 30px !important;
+}
+.decor-wrap .decor-block-top-pic3 img {
+	border: 0px currentColor; border-image: none; height: 390px !important;
+}
+html body .decor-method-block {
+	text-align: center; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+html body .decor-darant-wr2 ul li {
+	padding: 0px; font-size: 17px !important; font-weight: normal !important; margin-bottom: 10px; position: relative;
+}
+/*.site-ul li::before {
+	background: none !important; left: -28px; top: 5px; width: 15px; height: 12px; position: absolute; content: "";
+}*/
+html body .decor-darant-wr2 ul li span {
+	background: rgb(209, 230, 243) !important; border-radius: 50%; width: 30px; height: 30px; text-align: center; line-height: 30px; margin-right: 8px; display: inline-block;
+}
+html body .decor-wrap .decor-block-top3 .decor-block-top-frm-body3 {
+	width: 105px; margin-top: -10px; float: left;
+}

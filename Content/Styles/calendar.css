@@ -1,0 +1,48 @@
+img.tcalIcon {
+	margin-left: 1px; vertical-align: middle; cursor: pointer;
+}
+div#tcal {
+	padding: 2px 0px 0px; width: 158px; color: rgb(0, 0, 0); visibility: hidden; position: absolute; z-index: 1003;
+}
+div#tcal table {
+	border: 1px solid silver; border-image: none; width: 100%; border-collapse: collapse; background-color: white;
+}
+div#tcal table.ctrl {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+div#tcal table.ctrl td {
+	width: 15px; height: 20px;
+}
+div#tcal table.ctrl th {
+	border: 0px currentColor; border-image: none; color: black; background-color: white;
+}
+div#tcal th {
+	padding: 3px 0px; border: 1px solid silver; border-image: none; text-align: center; color: white; font-family: tahoma, verdana, arial; font-size: 10px; border-collapse: collapse; background-color: gray;
+}
+div#tcal td {
+	padding: 2px 0px; border: 0px currentColor; border-image: none; width: 22px; text-align: center; font-family: tahoma, verdana, arial; font-size: 11px; border-collapse: collapse; cursor: pointer;
+}
+div#tcal td.othermonth {
+	color: silver;
+}
+div#tcal td.weekend {
+	background-color: rgb(172, 214, 245);
+}
+div#tcal td.today {
+	border: 1px solid red; border-image: none;
+}
+div#tcal td.selected {
+	background-color: rgb(255, 179, 190);
+}
+iframe#tcalIF {
+	border: 0px currentColor; border-image: none; visibility: hidden; position: absolute; z-index: 98;
+}
+div#tcalShade {
+	visibility: hidden; position: absolute; z-index: 99;
+}
+div#tcalShade table {
+	border: 0px currentColor; border-image: none; width: 100%; border-collapse: collapse;
+}
+div#tcalShade table td {
+	padding: 0px; border: 0px currentColor; border-image: none; border-collapse: collapse;
+}

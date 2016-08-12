@@ -1,0 +1,1042 @@
+﻿<div class="hor_slider">
+    <script>
+        $(document).ready(function () {
+            sliderposition = 0;
+            slides = [
+                {
+                    image: "url('/Content/Img/mainslide1.jpg')",
+                    h1: "Отопление",
+                    container: "Мы оказываем весь спектр услуг по монтажу отопительных систем",
+                    color: "rgba(202,72,66,0.7)"
+                },
+                {
+                    image: "url('/Content/Img/mainslide2.jpg')",
+                    h1: "Водоснабжение",
+                    container: "Монтаж систем водоснабжения под ключ",
+                    color: "rgba(66,139,202,0.7)"
+                },
+                {
+                    image: "url('/Content/Img/mainslide3.jpg')",
+                    h1: "Канализация",
+                    container: "Подключение автономной канализации",
+                    color: "rgba(66,202,72,0.7)"
+                }
+            ];
+            setInterval(function () {
+                sliderposition++;
+                if (sliderposition > slides.length - 1) {
+                    sliderposition = 0;
+                }
+                var full_page_photo = $(".full_page_photo");
+                full_page_photo.css("background-image", slides[sliderposition].image);
+                full_page_photo.find("h1").text(slides[sliderposition].h1);
+                full_page_photo.find(".skincolored").css("background-color", slides[sliderposition].color);
+                full_page_photo.find(".container p").text(slides[sliderposition].container);
+            }, 7000);
+        });
+    </script>
+    <div class="full_page_photo" style='background-image: url("/Content/Img/mainslide1.jpg");'>
+        <div class="hgroup">
+            <div class="hgroup_title animated bounceInUp">
+                <div class="container">
+                    <h1>Отопление</h1>
+                </div>
+            </div>
+            <div class="hgroup_subtitle animated bounceInUp skincolored" style="background-color:rgba(202,72,66,0.7);">
+                <div class="container">
+                    <p>Мы оказываем весь спектр услуг по монтажу отопительных систем</p>
+                </div>
+            </div>
+        </div>
+        <div class="title-slider-box">
+            <div class="title-promo" style="display:none;">
+                <script>
+                    function CustomAnimate() {
+                        $(".title-promo--label").animate({ marginLeft: 15, }, 250).animate({ marginLeft: 0, }, 250).animate({ marginLeft: 15, }, 250).animate({ marginLeft: 0, }, 250);
+                    }
+                    $(document).ready(function () {
+                        $(".title-promo").show(700);
+                        CustomAnimate();
+                        setInterval(function () {
+                            CustomAnimate();
+                        }, 4000);
+                    })
+                </script>
+                @*<div class="title-promo--label">Акция</div>
+                <div class="title-promo--name">ДО КОНЦА МЕСЯЦА</div>
+                <div class="cls">
+                    <p>Закажи монтаж и получи<br>дополнительную скидку!</p>
+                    <p>
+                        <strong>
+                            1. Выгодно!&nbsp;<br>2.
+                            Надёжно!<br />3.Удобно!
+                        </strong>
+                    </p>
+                </div>
+                <div class="cls" style="font-size:36px;color:#F54030;margin:10px 0 10px 0;">
+                    <strong>10 <small>%</small></strong>
+                </div>
+                <div class="title-promo--free">
+                    <span class="red">*</span>подробности по телефону
+                </div>
+
+                <div class="cls">
+                    <div class="site-button orange">
+                        <a class="pop-call" href="">Заказать монтаж</a>
+                    </div>
+                </div>*@
+                @{Html.RenderPartial("~/Views/Shared/Feedback2.cshtml");}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main" style="margin-top:-95px;">
+    <div class="container triangles-of-section">
+        <div class="triangle-up-left"></div>
+        <div class="square-left"></div>
+        <div class="triangle-up-right"></div>
+        <div class="square-right"></div>
+    </div>
+    <!-- +[.site-content] -->
+    <div class="site-content cls">
+        <!-- +[.site-content-mid] -->
+        <div class="site-content-mid">
+            <!-- +[.title-slider] -->
+            @*<div class="title-slider--pager">
+                <a href="/montazh-otopleniya"
+                   data-slide-index="0">Монтаж<strong>отопления под ключ</strong></a>
+                <a href="/montazh-kanalizacii"
+                   data-slide-index="1">Монтаж<strong>канализации</strong></a>
+                <a href="/montazh-sistemy-vodoprovoda"
+                   data-slide-index="2">Монтаж<strong>системы водопровода</strong></a>
+            </div><!-- -[.title-slider] --> <!-- +[.title-sometext] -->*@
+            <div class="title-sometext cls clp">
+                <p>
+                    Уют в доме зависит от бесперебойно работающих коммуникаций, и специалисты
+                    нашей компании возьмут на себя профессиональный монтаж систем отопления и
+                    водопровода, гарантируя клиентам идеальный комфорт, независимо от капризов
+                    погоды.
+                </p>
+            </div><!-- -[.title-sometext] --> <!-- +[.title-calc] -->
+            <div class="title-calc cls">
+                <div class="title-calc--title">Выберите тариф, а мы всё рассчитаем</div>
+                <div class="cl"></div><!-- +[.title-calc- -boxes] -->
+                <div class="title-calc--boxes">
+                    <!-- +[item] -->
+                    <div class="title-calc--box active">
+                        <img alt="" src="/Content/Img/title_tar1.png">
+
+                        <div class="title-calc--box_text"
+                             data-attrmy="tgi0"><span>Отопление</span></div>
+                    </div><!-- -[item] -->         <!-- +[item] -->
+
+                    <div class="title-calc--box ">
+                        <img alt="" src="/Content/Img/title_tar2.png">
+
+                        <div class="title-calc--box_text"
+                             data-attrmy="tgi1"><span>Водоснабжение</span></div>
+                    </div><!-- -[item] -->
+                    <!-- +[item] -->
+                    <div class="title-calc--box ">
+                        <img alt="" src="/Content/Img/title_tar3.png">
+
+                        <div class="title-calc--box_text"
+                             data-attrmy="tgi2"><span>Септик</span></div>
+                    </div><!-- -[item] -->
+                </div><!-- -[.title-calc- -boxes] -->
+
+                <style></style>
+                <!-- +[.title-calc- -orange] -->
+                <div class="title-calc--orange cls pos3">
+                    <div class="title-calc--orange_line">
+                        <div class="tariffs-top tgi0">
+                            <div class="title-calc--orange_line--name">Выберите площадь:</div>
+                            <div class="site-button small" data-stab="0">100 м2</div>
+                            <div class="desc" style="display: none;">
+                                <p>В расчётах заложено газовое отопление, &nbsp;площадь 100 м2</p>
+                            </div>
+                            <div class="site-button small" data-stab="1">200 м2</div>
+                            <div class="desc" style="display: none;">
+                                <p>В расчётах заложено газовое отопление, &nbsp;площадь 200 м2</p>
+                            </div>
+                            <div class="site-button small" data-stab="2">300 м2</div>
+                            <div class="desc" style="display: none;">
+                                <p>В расчётах заложено газовое отопление, &nbsp;площадь 300 м2</p>
+                            </div>
+                            <div class="tariffs-desc"></div>
+                        </div>
+                        <div class="tariffs-top tgi1">
+                            <div class="site-button small" data-stab="0">Из колодца</div>
+                            <div class="desc" style="display: none;">
+                                <p>Подключение водоснабжения из колодца глубина до 15м.</p>
+                            </div>
+                            <div class="site-button small" data-stab="1">Из скважины</div>
+                            <div class="desc" style="display: none;">
+                                <p>Подключения водоснабжения из скважины глубина до 50м.</p>
+                            </div>
+                            <div class="tariffs-desc"></div>
+                        </div>
+                        <div class="tariffs-top tgi2">
+                            <div class="site-button small" data-stab="0">Септик</div>
+                            <div class="desc" style="display: none;">
+                                <p>
+                                    Цена указана на Септик дo 5-ти человек. Весь модельный ряд в
+                                    наличии!
+                                </p>
+                            </div>
+                            <div class="tariffs-desc"></div>
+                        </div>
+                    </div>
+                </div><!-- -[.title-calc- -orange] -->
+                <div>
+                    <div class="title-tariffs-tab tab0">
+                        <!-- +[.title-calc- -tarif_wrap] -->
+                        <div class="title-calc--tarif_wrap cls tgi0">
+                            <p>В расчётах заложено газовое отопление, &nbsp;площадь 100 м2</p><!-- +[item] -->
+
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Базовый</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке, обвязке котла и радиаторов.
+                                            <strong>52000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и т.д.)
+                                            <strong>12600р</strong>
+                                        </li>
+                                        <li>Полипропиленовые трубы, (фитинги, крепёж) <strong>36000р</strong></li>
+                                        <li>Алюминиевые радиаторы 8шт. <strong>32000р</strong></li>
+                                        <li>Двухконтурный котел Protherm (Словения)</li>
+                                        <li>включая коаксиальный дымоход <strong>45800р</strong></li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>178 400</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#100 м2#Тариф: Базовый"
+                                                                                                                  data-pop="Отопление>100 м2>Базовый">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Расширенный</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке, обвязке котла, радиаторов и тёплого пола.
+                                            <strong>56000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и т.д.)
+                                            <strong>12600р</strong>
+                                        </li>
+                                        <li>Полипропиленовые трубы, (фитинги, крепёж) <strong>36000р</strong></li>
+                                        <li>Стальные панельные радиаторы 8шт. <strong>40300р</strong></li>
+                                        <li>Двухконтурный котел Protherm (Словения)</li>
+                                        <li>включая коаксиальный дымоход <strong>45800р</strong></li>
+                                        <li>Тёплый пол в кухне и санузле (труба сшитый полиэтилен)</li>
+                                        <li>включая регулирование температуры. <strong>15800р</strong></li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>216 500</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#100 м2#Тариф: Расширенный"
+                                                                                                                  data-pop="Отопление>100 м2>Расширенный">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                </div>
+                                <div class="title-calc--tarif_name">VIP</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке, обвязке котла, радиаторов и тёплого пола.
+                                            <strong>78000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и т.д.)
+                                            <strong>10600р</strong>
+                                        </li>
+                                        <li>
+                                            Трубы Сшитый полиэтилен Stout (Италия) (фитинги, крепёж)
+                                            <strong>65000р</strong>
+                                        </li>
+                                        <li>Стальные панельные радиаторы 6шт. <strong>32000р</strong></li>
+                                        <li>Двухконтурный котел Vaillant (Германия)</li>
+                                        <li>включая коаксиальный дымоход. <strong>62400р</strong></li>
+                                        <li>Тёплый пол на весь 1-ый этаж около 50 м2 (сшитый полиэтилен)</li>
+                                        <li>включая регулирование температуры. <strong>49000р</strong></li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>297 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#100 м2#Тариф: VIP"
+                                                                                                                  data-pop="Отопление>100 м2>VIP">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->
+                        </div><!-- -[.title-calc- -tarif_wrap] -->	  	   <!-- +[.title-calc- -tarif_wrap] -->
+
+                        <div class="title-calc--tarif_wrap cls tgi0">
+                            <p>В расчётах заложено газовое отопление, &nbsp;площадь 200 м2</p><!-- +[item] -->
+
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Базовый</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке, обвязке котла и радиаторов.
+                                            <strong>78000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и т.д.)
+                                            <strong>20000р</strong>
+                                        </li>
+                                        <li>Полипропиленовые трубы, (фитинги, крепёж) <strong>66000р</strong></li>
+                                        <li>Алюминиевые радиаторы 14шт. <strong>57000р</strong></li>
+                                        <li>Двухконтурный котел Protherm (Словения)</li>
+                                        <li>включая коаксиальный дымоход <strong>45000р</strong></li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>265 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#200 м2#Тариф: Базовый"
+                                                                                                                  data-pop="Отопление>200 м2>Базовый">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Расширенный</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке, обвязке котла, бойлера, радиаторов и
+                                            тёплого пола. &nbsp;<strong>96000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и т.д.)
+                                            &nbsp;<strong>20000р</strong>
+                                        </li>
+                                        <li>
+                                            Полипропиленовые трубы, (фитинги, крепёж)
+                                            &nbsp;<strong>66000р</strong>
+                                        </li>
+                                        <li>
+                                            Стальные панельные радиаторы&nbsp;&nbsp;14шт.
+                                            &nbsp;<strong>68000р</strong>
+                                        </li>
+                                        <li>Одноконтурный котел Protherm(Словения)&nbsp;с контуром для бойлера,</li>
+                                        <li>включая коаксиальный дымоход &nbsp;<strong>45800р</strong></li>
+                                        <li>Тёплый пол в кухне и санузле (труба сшитый полиэтилен)</li>
+                                        <li>включая&nbsp;регулирование температуры. &nbsp;<strong>12800р</strong></li>
+                                        <li>Бойлер Drazice (Чехия) 160 литров,</li>
+                                        <li>включая комплектующие для обвязки. <strong>36000р&nbsp;</strong></li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>344 600</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#200 м2#Тариф: Расширенный"
+                                                                                                                  data-pop="Отопление>200 м2>Расширенный">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                </div>
+                                <div class="title-calc--tarif_name">VIP</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по обвязке котельной, монтажу радиаторов и тёплого пола.
+                                            &nbsp;<strong>165000р</strong>
+                                        </li>
+                                        <li>Комплектующие и материалы.&nbsp;<strong>12600р</strong></li>
+                                        <li>Трубы Сшитый полиэтилен&nbsp;Stout (Италия)</li>
+                                        <li>&nbsp;(фитинги, крепёж, коллектора) <strong>128000р</strong></li>
+                                        <li>Стальные панельные радиаторы 12шт. &nbsp;<strong>58000р</strong></li>
+                                        <li>Напольный &nbsp;котел Baxi SLIM (Италия),</li>
+                                        <li>включая оборудование для котельной</li>
+                                        <li>
+                                            (насос Grundfos (Дания), гр. безопасности и т.д.)
+                                            <strong>90000р</strong>
+                                        </li>
+                                        <li>
+                                            Тёплый пол на весь 1-ый этаж около 90 м2 &nbsp;(сшитый
+                                            полиэтилен)&nbsp;
+                                        </li>
+                                        <li>включая&nbsp;регулирование температуры. &nbsp;<strong>88000р</strong></li>
+                                        <li>Бойлер Drazice (Чехия) 200 литров,</li>
+                                        <li>
+                                            включая комплектующие для
+                                            обвязки.&nbsp;<strong>42000р&nbsp;</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>583 600</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#200 м2#Тариф: VIP"
+                                                                                                                  data-pop="Отопление>200 м2>VIP">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->
+                        </div><!-- -[.title-calc- -tarif_wrap] -->	  	   <!-- +[.title-calc- -tarif_wrap] -->
+
+                        <div class="title-calc--tarif_wrap cls tgi0">
+                            <p>В расчётах заложено газовое отопление, &nbsp;площадь 300 м2</p><!-- +[item] -->
+
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Базовый</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке и обвязке котла, бойлера, радиаторов.
+                                            &nbsp;<strong>125000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и
+                                            т.д.)&nbsp;<strong>26000р</strong>
+                                        </li>
+                                        <li>
+                                            Полипропиленовые трубы, (фитинги, крепёж)
+                                            &nbsp;<strong>94000р</strong>
+                                        </li>
+                                        <li>Алюминиевые радиаторы 18шт. &nbsp;<strong>72000р</strong></li>
+                                        <li>Напольный &nbsp;котел Baxi SLIM (Италия),</li>
+                                        <li>включая оборудование для котельной</li>
+                                        <li>
+                                            (насос Grundfos (Дания), гр. безопасности и
+                                            т.д.)&nbsp;<strong>94000р</strong>
+                                        </li>
+                                        <li>Бойлер Drazice (Чехия) 160 литров,</li>
+                                        <li>
+                                            включая комплектующие для
+                                            обвязки.&nbsp;<strong>36000р&nbsp;</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>447 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#300 м2#Тариф: Базовый"
+                                                                                                                  data-pop="Отопление>300 м2>Базовый">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Расширенный</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке и обвязке котла, бойлера, радиаторов и
+                                            тёплого пола. &nbsp;<strong>192000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и т.д.)
+                                            &nbsp;<strong>14600р</strong>
+                                        </li>
+                                        <li>
+                                            Полипропиленовые трубы, (фитинги, крепёж)
+                                            &nbsp;<strong>94000р</strong>
+                                        </li>
+                                        <li>
+                                            Стальные панельные радиаторы&nbsp;&nbsp;18шт.
+                                            &nbsp;<strong>86000р</strong>
+                                        </li>
+                                        <li>Напольный &nbsp;котел Baxi SLIM (Италия),</li>
+                                        <li>включая оборудование для котельной</li>
+                                        <li>
+                                            (коллектор, насос Grundfos (Дания), гр. безопасности и т.д.)
+                                            <strong>106000р</strong>
+                                        </li>
+                                        <li>Бойлер Drazice (Чехия) 200 литров,</li>
+                                        <li>включая комплектующие для обвязки.&nbsp;<strong>42000р</strong></li>
+                                        <li>
+                                            Тёплый пол на кухне, в гостинной, санузлах, прихожей около 90 м2 (сшитый
+                                            полиэтилен)
+                                        </li>
+                                        <li>
+                                            включая&nbsp;регулирование температуры.
+                                            &nbsp;<strong>88000р</strong>&nbsp;
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>622 600</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#300 м2#Тариф: Расширенный"
+                                                                                                                  data-pop="Отопление>300 м2>Расширенный">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">VIP</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке и обвязке котла, бойлера, радиаторов и
+                                            тёплого пола. &nbsp;<strong>194000р</strong>
+                                        </li>
+                                        <li>
+                                            Комплектующие и материалы (комплекты вентилей, переходы и т.д.)
+                                            &nbsp;<strong>14000р</strong>
+                                        </li>
+                                        <li>Трубы Сшитый полиэтилен&nbsp;Stout (Италия)</li>
+                                        <li>&nbsp;(фитинги, крепёж, коллектора)&nbsp;<strong>194000р</strong></li>
+                                        <li>
+                                            Стальные панельные радиаторы&nbsp;&nbsp;18шт.
+                                            &nbsp;<strong>86000р</strong>
+                                        </li>
+                                        <li>Напольный &nbsp;котел &nbsp;Viessmann (Германия),</li>
+                                        <li>включая оборудование для котельной</li>
+                                        <li>
+                                            (коллектор, насос Grundfos (Дания), гр. безопасности и
+                                            т.д.)&nbsp;<strong>158000р</strong>
+                                        </li>
+                                        <li>Бойлер Drazice (Чехия) 200 литров,</li>
+                                        <li>включая комплектующие для обвязки. <strong>42000р</strong></li>
+                                        <li>
+                                            Тёплый пол на кухне, в гостинной, санузлах, прихожей около 90 м2 (сшитый
+                                            полиэтилен)
+                                        </li>
+                                        <li>
+                                            включая&nbsp;регулирование температуры.
+                                            &nbsp;<strong>88000р</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>776 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Отопление#300 м2#Тариф: VIP"
+                                                                                                                  data-pop="Отопление>300 м2>VIP">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->
+                        </div><!-- -[.title-calc- -tarif_wrap] -->
+                    </div>
+                    <div class="title-tariffs-tab tab1">
+                        <!-- +[.title-calc- -tarif_wrap] -->
+                        <div class="title-calc--tarif_wrap cls tgi1">
+                            <p>Подключение водоснабжения из колодца глубина до 15м.</p><!-- +[item] -->
+
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Простой</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке насоса и вспомогательного оборудования.
+                                            <strong>18000р</strong>
+                                        </li>
+                                        <li>Погружной насос "Водолей", гидроаккумулятор 100л.</li>
+                                        <li>
+                                            включая, запорную, измерительную арматуру, автоматику &nbsp;и т. д.
+                                            <strong>26000р</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>44 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Водоснабжение#Из колодца#Тариф: Простой"
+                                                                                                                 data-pop="Водоснабжение>Из колодца>Простой">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star active"></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">То, что надо</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке насоса, трубопровода&nbsp;с отогревающим
+                                            кабелем
+                                        </li>
+                                        <li>и вспомогательного оборудования.&nbsp;<strong>20000р</strong></li>
+                                        <li>Погружной насос Grundfos (Дания), гидроаккумулятор 100л.</li>
+                                        <li>включая, запорную, измерительную арматуру, автоматику &nbsp;</li>
+                                        <li>
+                                            греющий кабель (предотвращает замерзание водопровода)&nbsp;и т.
+                                            д.&nbsp;<strong>48000р</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>68 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Водоснабжение#Из колодца#Тариф: То, что надо"
+                                                                                                                 data-pop="Водоснабжение>Из колодца>То, что надо">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">VIP</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке насоса, трубопровода&nbsp;с отогревающим
+                                            кабелем
+                                        </li>
+                                        <li>и вспомогательного оборудования.&nbsp;<strong>24000р</strong></li>
+                                        <li>Погружной насос Grundfos (Дания), гидроаккумулятор 100л.</li>
+                                        <li>включая, запорную, измерительную арматуру, фильтр, автоматику,</li>
+                                        <li>
+                                            греющий кабель (предотвращает замерзание водопровода)&nbsp;и т.
+                                            д.&nbsp;<strong>50000р</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>74 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Водоснабжение#Из колодца#Тариф: VIP"
+                                                                                                                 data-pop="Водоснабжение>Из колодца>VIP">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->
+                        </div><!-- -[.title-calc- -tarif_wrap] -->
+                        <!-- +[.title-calc- -tarif_wrap] -->
+                        <div class="title-calc--tarif_wrap cls tgi1">
+                            <p>Подключения водоснабжения из скважины глубина до 50м.</p><!-- +[item] -->
+
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Простой</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>Монтажные работы по установке насоса</li>
+                                        <li>
+                                            и вспомогательного оборудования. (без кессона)
+                                            &nbsp;<strong>20000р</strong>
+                                        </li>
+                                        <li>Погружной насос "Водолей", гидроаккумулятор 100л.</li>
+                                        <li>
+                                            включая, оголовок,&nbsp;запорную, измерительную арматуру, автоматику
+                                            &nbsp;и т. д.&nbsp;<strong>29000р</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>49 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Водоснабжение#Из скважины#Тариф: Простой"
+                                                                                                                 data-pop="Водоснабжение>Из скважины>Простой">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">То, что надо</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке насоса, трубопровода&nbsp;с отогревающим
+                                            кабелем
+                                        </li>
+                                        <li>
+                                            и вспомогательного оборудования. (без
+                                            кессона)&nbsp;<strong>22000р</strong>
+                                        </li>
+                                        <li>Погружной насос Grundfos (Дания)&nbsp;, гидроаккумулятор 100л.</li>
+                                        <li>включая, оголовок,&nbsp;</li>
+                                        <li>запорную, измерительную арматуру, автоматику &nbsp;</li>
+                                        <li>
+                                            греющий кабель (предотвращает замерзание водопровода)&nbsp;и т.
+                                            д.&nbsp;<strong>58000р</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>80 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Водоснабжение#Из скважины#Тариф: То, что надо"
+                                                                                                                 data-pop="Водоснабжение>Из скважины>То, что надо">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">VIP</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>
+                                            Монтажные работы по установке насоса, трубопровода&nbsp;с отогревающим
+                                            кабелем, фильтра
+                                        </li>
+                                        <li>
+                                            и вспомогательного оборудования. (без
+                                            кессона)&nbsp;<strong>24000р</strong>
+                                        </li>
+                                        <li>Погружной насос Grundfos (Дания)&nbsp;, гидроаккумулятор 100л.</li>
+                                        <li>включая, оголовок,&nbsp;</li>
+                                        <li>запорную, измерительную арматуру, автоматику, фильтр, &nbsp;</li>
+                                        <li>
+                                            греющий кабель (предотвращает замерзание водопровода)&nbsp;и т.
+                                            д.&nbsp;<strong>61000р</strong>
+                                        </li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>85 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Водоснабжение#Из скважины#Тариф: VIP"
+                                                                                                                 data-pop="Водоснабжение>Из скважины>VIP">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->
+                        </div><!-- -[.title-calc- -tarif_wrap] -->
+                    </div>
+                    <div class="title-tariffs-tab tab2">
+                        <!-- +[.title-calc- -tarif_wrap] -->
+                        <div class="title-calc--tarif_wrap cls tgi2">
+                            <p>Цена указана на Септик дo 5-ти человек. Весь модельный ряд в наличии!</p><!-- +[item] -->
+
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Топас (Россия)</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>Станция биологической очистки&nbsp;Топас 5&nbsp;</li>
+                                        <li>
+                                            включая, доставку до объекта 60км от
+                                            МКАД.&nbsp;<strong>90000р</strong>
+                                        </li>
+                                        <li>Монтажные работы (шеф-монтаж) <strong>16000р</strong></li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>106 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Септик#Септик#Тариф: Топас (Россия)"
+                                                                                                                  data-pop="Септик>Септик>Топас (Россия)">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->			    			     <!-- +[item] -->
+                            <div class="title-calc--tarif">
+                                <div class="title-calc--starz">
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                    <div class="site-star "></div>
+                                </div>
+                                <div class="title-calc--tarif_name">Астра  (Россия)</div>
+                                <div class="title-calc--desc">
+                                    <div class="title-calc--desc_name">В стоимость входит:</div>
+                                    <ul>
+                                        <li>В стоимость входит:</li>
+                                        <li>Станция биологической очистки&nbsp;Астра 5&nbsp;</li>
+                                        <li>
+                                            включая, доставку до объекта 60км от
+                                            МКАД.&nbsp;<strong>88000р</strong>
+                                        </li>
+                                        <li>Монтажные работы (шеф-монтаж)&nbsp;<strong>16000р</strong></li>
+                                    </ul>
+                                    <div class="title-calc--desc_price">Цена: <strong>104 000</strong> р.</div><a class="pop-call site-button bigorange" data-formdata="Септик#Септик#Тариф: Астра  (Россия)"
+                                                                                                                  data-pop="Септик>Септик>Астра  (Россия)">Заказать точный расчёт</a>
+                                </div>
+                            </div><!-- -[item] -->
+                        </div><!-- -[.title-calc- -tarif_wrap] -->
+                    </div>
+                </div><!-- +[.title-calclinks] -->
+                <div class="title-calclinks cls">
+                    <!-- +[item] -->	 <a class="title-calclinks--box"
+                                           href="/calc">
+                        <img alt="" src="/Content/Img/title_calc_otopleniya.jpg">
+                        <span>Калькулятор <br>Отопления</span>
+                    </a>	 <!-- -[item] -->	 <!-- +[item] -->
+                    <a class="title-calclinks--box" href="/calc2">
+                        <img alt=""
+                             src="/Content/Img/title_calc_vodosnab.jpg">
+                        <span>Калькулятор <br>Водоснабжения и канализации</span>
+                    </a>	 <!-- -[item] -->
+                </div><!-- -[.title-calclinks] -->
+            </div><!-- -[.title-calc] --> <!-- +[.title-why] -->
+            <div class="title-why cls clp def-menu">
+                <div class="title-why--name">
+                    Почему стоит доверить монтаж систем отопления <br>и
+                    водоснабжения Теплосиле
+                </div>
+                <ul class="cls static">
+                    <li class="title-why--box">
+                        <div class="title-why--box_in">
+                            <strong>Индивидуальные решения</strong><i>
+                                <img width="74" height="74" alt="" src="/Content/Img/title__why__we__icon1.png">
+                            </i>
+
+                            <p>
+                                Индивидуальный подход к любому заказу с учетом всех особенностей
+                                объекта.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="title-why--box">
+                        <div class="title-why--box_in">
+                            <strong>Команда профессионалов</strong><i>
+                                <img width="74" height="74" alt="" src="/Content/Img/title__why__we__icon2.png">
+                            </i>
+
+                            <p>
+                                Работа с высококвалифицированными работниками – наши мастера берутся за
+                                задачи любой сложности, ведь их опыт и знания позволяют это
+                                сделать.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="title-why--box">
+                        <div class="title-why--box_in">
+                            <strong>3 в 1 бесплатно</strong><i>
+                                <img width="74"
+                                     height="74" alt="" src="/Content/Img/title__why__we__icon3.png">
+                            </i>
+
+                            <p>
+                                Возможность заказать бесплатный выезд специалиста, получить консультацию и
+                                полную смету работ на месте.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="title-why--box">
+                        <div class="title-why--box_in">
+                            <strong>Гарантии</strong><i>
+                                <img width="74"
+                                     height="74" alt="" src="/Content/Img/title__why__we__icon4.png">
+                            </i>
+
+                            <p>
+                                Гарантия на установку инженерных коммуникаций в течение 12
+                                месяцев.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="title-why--box">
+                        <div class="title-why--box_in">
+                            <strong>Скорость выполнения</strong><i>
+                                <img width="74" height="74" alt="" src="/Content/Img/title__why__we__icon5.png">
+                            </i>
+
+                            <p>
+                                Максимум удобства – монтаж системы отопления или водоснабжения на Вашем
+                                объекте пройдет быстро и с учетом всех условий, прописанных в договоре с
+                                вами.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="title-why--box">
+                        <div class="title-why--box_in">
+                            <strong>Демократичные цены</strong><i>
+                                <img width="74" height="74" alt="" src="/Content/Img/title__why__we__icon6.png">
+                            </i>
+
+                            <p>
+                                Оптимальные цены и скидки для постоянных клиентов и
+                                пенсионеров.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- -[.title-why] --> <!-- +[.title-how] -->
+            <div class="title-how cls">
+                <div class="title-how--box">
+                    <div class="title-how--name">Как мы работаем:</div>
+                    <div class="cls">
+                        <div class="fleft w50p">
+                            <div class="title-how--item">
+                                <a href="/viezd-na-ocmotr"><span>Выезд на осмотр</span></a>
+                            </div>
+                            <div class="title-how--item">
+                                <a href="/kommercheskoe-predlogenie">
+                                    <span>
+                                        Коммерческое
+                                        предложение
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="title-how--item">
+                                <a href="/dogovor"><span>Договор</span></a>
+                            </div>
+                        </div>
+                        <div class="fright w50p">
+                            <div class="title-how--item">
+                                <a href="/komplektasia-dostavka">
+                                    <span>
+                                        Комплектация и
+                                        доставка
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="title-how--item">
+                                <a href="/montag"><span>Монтаж</span></a>
+                            </div>
+                            <div class="title-how--item">
+                                <a href="/nashi-garantii">
+                                    <span>
+                                        Наши
+                                        гарантии
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- -[.title-how] --> <!-- +[.title-bonus] -->
+            <div class="title-bonus cls clp">
+                <div class="title-bonus--in">
+                    <div class="title-bonus--name">
+                        Бонус к сотрудничеству с нами - экономия Вашего
+                        <br>времени
+                    </div>
+                    <p>
+                        Теплосила предлагает Вам максимальную экономию времени. Мы беремся не только
+                        за прокладку коммуникаций, но и за их грамотное проектирование, доставку на
+                        объект, дальнейшее обслуживание. Чтобы узнать стоимость Вашего заказа, просто
+                        позвоните нашим специалистам, и мы быстро рассчитаем Вашу смету, а затем
+                        профессионально выполним все оговоренные работы.
+                    </p>
+                </div>
+            </div><!-- -[.title-bonus] --> <!-- +[.title-vopform] -->
+            <div class="title-vopform cls">
+                <div class="title-vopform--name">Вы можете задать нам вопрос:</div>
+                <div class="title-vopform--in">
+                    <script src="/Scripts/Feedback.js"></script>
+                    <form>
+                        <div class="form-field text"><input name="clientName" class="styler name" type="text" placeholder="Ваше имя" value=""></div>
+                        <div class="form-field text"><input name="clientPhone" class="styler phone" type="text" placeholder="Телефон" value=""></div>
+                        <div class="form-field text"><input name="clientMessage" class="styler ques" type="text" placeholder="Вопрос" value=""></div>
+                        <div class="form-field submit"><input class="site-button green FeedbackFormSubmit" type="button" value="Подача запроса"></div>
+                    </form>
+                </div>
+            </div><!-- -[.title-vopform] --> <!-- +[.title-reviews] -->
+            <!--div class="title-reviews cls clp">
+                <div class="title-reviews--name">Нас выбирают и рекомендуют</div>
+                <div class="title-reviews--link">
+                    <a href="/otzyvy">
+                        Все
+                        отзывы
+                    </a>
+                </div>
+                <div class="title-reviews--in cls"></div>
+            </div-->
+            <!-- -[.title-reviews] --> <!-- +[.title-obj] -->
+            <!--div class="title-obj cls clp">
+                <div class="title-obj--left">
+                    <div class="title-obj--name cls">
+                        Объекты <a class="fright" href="/ob_ekty-na-karte">
+                            Все
+                            объекты
+                        </a>
+                    </div>
+                    <div class="cls">
+                        <div class="title-obj--object">
+                            <div class="title-obj--object_image">
+                                <a href="/ob_ekty-na-karte/news_post/kottedzh-v-solnechnogorske-moskovskoy-oblasti">
+                                    <img alt="" src="/Content/Img/DSC__0502.jpg">
+                                </a>
+                            </div>
+                            <div class="title-obj--object_date">06/02/2016</div><a class="title-obj--object_name"
+                                                                                   href="/ob_ekty-na-karte/news_post/kottedzh-v-solnechnogorske-moskovskoy-oblasti">
+                                Коттедж
+                                в Солнечногорске, Московской области
+                            </a>
+                        </div>
+                        <div class="title-obj--object">
+                            <div class="title-obj--object_image">
+                                <a href="/ob_ekty-na-karte/news_post/kottedzh-p.rizhskoe-pomeste-2">
+                                    <img alt="" src="/Content/Img/20131227__103458.jpg">
+                                </a>
+                            </div>
+                            <div class="title-obj--object_date">03/12/2015</div><a class="title-obj--object_name"
+                                                                                   href="/ob_ekty-na-karte/news_post/kottedzh-p.rizhskoe-pomeste-2">
+                                Коттедж
+                                п.Рижское поместье 2 Истринского р-на
+                            </a>
+                            <p><br><strong><br></strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-obj--right">
+                    <div class="title-obj--name cls">
+                        Наша команда <a class="fright" href="/nasha-komanda">
+                            Вся
+                            команда
+                        </a>
+                    </div>
+                    <div class="title-obj--object">
+                        <div class="title-obj--object_image">
+                            <a href="/nasha-komanda/news_post/stas-pichkalev">
+                                <img alt="" src="/Content/Img/DSC__0473.jpg">
+                            </a>
+                        </div>
+                        <div class="title-obj--object_date">20/01/2016</div><a class="title-obj--object_name"
+                                                                               href="/nasha-komanda/news_post/stas-pichkalev">
+                            Стас
+                            Пичкалёв<small>Монтажник отопительных систем</small>
+                        </a>         <small>
+                            Опыт
+                            работы 9 лет
+                        </small><br>
+                    </div>
+                    <div style="display: none;">
+                        <div class="title-obj--object_image"><img alt="" src="/Content/Img/title_teammate.jpg"></div>
+                        <div class="title-obj--object_name">Сергей Иванович <small>Техник</small></div>
+                        <div class="cls">
+                            <p>
+                                Опыт работы 5 лет <br>Работал в нескольких крупных проектах. Высшее
+                                техническое образование
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </!--div-->
+            <!-- -[.title-obj] -->
+        </div>
+    </div>
+</div>

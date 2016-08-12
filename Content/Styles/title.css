@@ -1,0 +1,360 @@
+.title-slider-text {
+	left: 50%; top: 243px; width: 470px; text-align: right; color: rgb(255, 255, 255); line-height: 38px; font-family: "Exo 2"; font-size: 40px; position: absolute;
+}
+.title-slider {
+	height: 430px; overflow: hidden; position: relative;
+}
+.title-slider .bx-controls {
+	left: 50%; top: 432px; width: 445px; text-align: right; position: absolute; z-index: 100;
+}
+.title-slider .custom-bx-prev {
+	background: url("../images/bx-arrr.png") no-repeat 0px 0px; margin: 0px 0px 0px 4px; width: 16px; height: 50px; vertical-align: middle; display: inline-block; cursor: pointer;
+}
+.title-slider .custom-bx-next {
+	background: url("../images/bx-arrr.png") no-repeat 0px 0px; margin: 0px 0px 0px 4px; width: 16px; height: 50px; vertical-align: middle; display: inline-block; cursor: pointer;
+}
+.title-slider .custom-bx-next {
+	margin: 0px 4px 0px 0px; transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);
+}
+.title-slider .bx-pager-item {
+	background: rgb(152, 150, 149); margin: 0px 3px; border-radius: 50%; width: 7px; height: 7px; color: transparent; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative;
+}
+.title-slider .bx-pager-item a {
+	background: none; margin: -5px 0px 0px -5px; border-radius: 50%; left: 50%; top: 50%; width: 10px; height: 10px; position: absolute;
+}
+.title-slider .bx-pager-item a.active {
+	background: rgb(248, 206, 46);
+}
+.title-slider-in {
+	margin: 0px 0px 0px -1000px; left: 50%; top: 0px; width: 2000px; height: 541px; position: absolute;
+}
+.title-slider-box {
+	height: 430px; text-align: center;
+}
+.title-slider-in img {
+	height: 100%; max-width: 100%;
+}
+.title-slider--box {
+	position: relative;
+}
+.title-slider--pager {
+	text-align: center; overflow: hidden; font-size: 0px; position: relative; background-image: linear-gradient(rgb(44, 84, 152), rgb(36, 68, 128)); background-color: rgb(40, 76, 140);
+}
+.title-slider--pager a {
+	padding: 56px 0px 0px 142px; width: 322px; height: 143px; text-align: left; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 15px; font-family: "Exo 2"; font-size: 11px; text-decoration: none; vertical-align: top; display: inline-block; position: relative; box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.title-slider--pager a strong {
+	line-height: 21px; font-size: 16px; display: block;
+}
+.title-slider--pager a::before {
+	background: url("../images/ti1.png") no-repeat 0px 0px; left: 48px; top: 37px; width: 90px; height: 90px; position: absolute; content: "";
+}
+.title-slider--pager a + a::before {
+	background: url("../images/ti2.png") no-repeat 0px 0px;
+}
+.title-slider--pager a + a + a::before {
+	background: url("../images/ti3.png") no-repeat 0px 0px;
+}
+.title-slider--pager a.active {
+	background-color: rgb(37, 137, 197);
+}
+.title-slider--pager a:hover {
+	background-color: rgb(37, 137, 197);
+}
+.title-slider--pager-in {
+	height: 143px; position: absolute;
+}
+.title-sometext {
+	margin: 0px auto; padding: 35px 0px 34px; width: 940px; text-align: center; color: rgb(63, 63, 63); line-height: 23px; font-size: 16px; position: relative;
+}
+.title-calc {
+	background: url("../images/title_calc_back.jpg") no-repeat 50% 0px; position: relative; min-height: 1489px;
+}
+.title-calc::before {
+	background: url("../images/title_mramor.jpg") no-repeat 50% 0px; left: 0px; top: 0px; width: 100%; height: 411px; position: absolute; content: "";
+}
+.title-calc--title {
+	padding: 31px 0px 28px; text-align: center; color: rgb(63, 63, 63); line-height: 32px; font-family: "Exo 2"; font-size: 25px; font-weight: bold; position: relative;
+}
+.title-calc--boxes {
+	margin: 0px 0px 75px; text-align: center; font-size: 0px;
+}
+.title-calc--box {
+	margin: 0px 20px; border-radius: 50%; //border: 6px solid rgb(255, 255, 255); border-image: none; //width: 170px; //height: 170px; display: inline-block; position: relative; cursor: pointer; //box-shadow: 2px 1px 7px rgba(0,0,0,0.39), inset 0px 0px 0px rgba(255,255,255,0.3); //background-image: linear-gradient(rgb(73, 237, 234), rgb(19, 187, 177)); //background-color: rgb(44, 212, 206); -webkit-border-radius: 50%; -webkit-box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.39), inset 0 0 0 rgba(255, 255, 255, 0.3);
+}
+.title-calc--box img {
+	border: 0px currentColor; border-image: none;
+}
+.title-calc--box_text {
+	margin: 0px 0px 0px -85px; left: 50%; top: 193px; width: 170px; text-align: center; text-transform: uppercase; position: absolute;
+}
+.title-calc--box_text span {
+	color: rgb(37, 137, 198); line-height: 20px; font-size: 16px; font-weight: bold; border-bottom-color: rgb(37, 137, 198); border-bottom-width: 1px; border-bottom-style: dashed; display: inline-block;
+}
+.title-calc--box:hover .title-calc--box_text span {
+	border-color: transparent;
+}
+.title-calc--orange {
+	margin: 0px auto 42px; padding: 18px 29px 15px; border-radius: 3px; width: 940px; color: rgb(255, 255, 255); line-height: 19px; font-family: "Exo 2"; font-size: 16px; position: relative; box-sizing: border-box; box-shadow: 5px 5px 13px rgba(0,0,0,0.34), inset 0px -5px 0px rgba(0,0,0,0.12); background-image: linear-gradient(rgb(255, 181, 0), rgb(255, 103, 0)); background-clip: padding-box; background-color: rgb(255, 144, 0); -webkit-box-sizing: border-box; -webkit-border-radius: 3px; -webkit-box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.34), inset 0 -5px 0 rgba(0, 0, 0, 0.12);
+}
+.title-calc--orange::before {
+	background: url("../images/title_tarif_marker.png") no-repeat 0px 0px; margin: 0px 0px 0px -237px; left: 50%; top: -13px; width: 33px; height: 13px; position: absolute; content: "";
+}
+.title-calc--orange.pos2::before {
+	margin: 0px 0px 0px -14px;
+}
+.title-calc--orange.pos3::before {
+	margin: 0px 0px 0px 210px;
+}
+.title-calc--orange_line {
+	padding: 0px 0px 12px; position: relative;
+}
+.title-calc--orange_line--name {
+	width: 210px; display: inline-block;
+}
+.title-calc--orange p {
+	margin: 5px 0px;
+}
+.title-calc--tarif_wrap {
+	margin: 0px auto 40px; width: 940px; text-align: center; font-size: 0px;
+}
+.title-calc--tarif {
+	background: rgb(255, 255, 255); border-radius: 3px; width: 280px; float: left; position: relative; box-shadow: 2px 2px 3px rgba(0,0,0,0.08), inset 0px -3px 0px rgba(0,0,0,0.08); -webkit-border-radius: 3px; -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.08), inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+}
+.title-calc--tarif + .title-calc--tarif {
+	margin: 0px 0px 0px 50px;
+}
+.title-calc--tarif_name {
+	background: url("../images/title-tarif-name.png") no-repeat 0px 0px; padding: 37px 0px 0px; height: 83px; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 24px; font-family: "Exo 2"; font-size: 20px; font-weight: bold; box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.title-calc--starz {
+	left: 0px; top: 19px; width: 100%; text-align: center; font-size: 0px; position: absolute;
+}
+.title-calc--desc {
+	padding: 0px 30px 30px; text-align: left; color: rgb(63, 63, 63); font-family: "Exo 2"; font-size: 13px;
+}
+.title-calc--desc ul {
+	list-style: none !important;
+}
+.title-calc--desc ul li {
+	list-style: none !important;
+}
+.title-calc--desc .site-ul li {
+	margin-bottom: 8px;
+}
+.title-calc--desc_name {
+	padding: 16px 0px 19px;
+}
+.title-calc--desc_price {
+	margin: 0px 0px 15px; line-height: 30px;
+}
+.title-calc--desc_price strong {
+	color: rgb(126, 192, 58); font-size: 25px;
+}
+.title-calclinks {
+	margin: 0px auto 40px; width: 940px; position: relative;
+}
+.title-calclinks--box {
+	border-radius: 3px; width: 450px; height: 225px; overflow: hidden; float: left; position: relative; -webkit-border-radius: 3px;
+}
+.title-calclinks--box + .title-calclinks--box {
+	float: right;
+}
+.title-calclinks--box span {
+	background: rgba(0, 0, 0, 0.5); padding: 15px 0px; left: 0px; top: 50%; width: 100%; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; font-family: "Exo 2"; font-size: 16px; font-weight: bold; position: absolute; transform: translateY(-50%); -webkit-transform: translateY(-50%);
+}
+.title-why {
+	margin: 0px auto; width: 940px; position: relative;
+}
+.title-why--name {
+	background: url("../images/title_why_we_list_name.png") no-repeat 50% 0px; margin: 0px 0px 5px; padding: 30px 140px; height: 124px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; font-family: "Exo 2"; font-size: 25px; font-weight: bold; box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.title-why--box {
+	margin: 0px 0px 24px !important; padding: 0px 0px 0px 118px !important; width: 50%; color: rgb(63, 63, 63); font-family: "Exo 2"; font-size: 16px; float: left; position: relative; box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+:nth-child(2n+1).title-why--box {
+	padding: 0px 118px 0px 0px !important; text-align: right; clear: both;
+}
+.title-why--box_in {
+	line-height: 18px; vertical-align: middle; display: inline-block;
+}
+.title-why--box strong {
+	text-transform: uppercase; display: block;
+}
+.title-why--box i {
+	margin: -31px 0px 0px; border-radius: 50%; left: 14px; top: 50%; width: 74px; height: 74px; position: absolute; background-image: linear-gradient(rgb(51, 180, 219), rgb(23, 93, 177)); background-color: rgb(51, 180, 219); -webkit-border-radius: 50%;
+}
+:nth-child(2n+1).title-why--box i {
+	left: auto; right: 14px;
+}
+.title-how {
+	background: rgb(211, 238, 255); padding: 40px 0px; position: relative;
+}
+.title-how::before {
+	background: url("../images/title_mujick.png") no-repeat 0px 0px; margin: 0px 0px 0px -546px; left: 50%; width: 482px; height: 371px; bottom: 0px; position: absolute; content: "";
+}
+.title-how--box {
+	margin: 0px auto; padding: 26px 20px 14px 432px; border-radius: 3px; width: 940px; color: rgb(63, 63, 63); line-height: 21px; font-family: "Exo 2"; font-size: 16px; min-height: 284px; counter-reset: list; box-sizing: border-box; box-shadow: 1px 1px 3px rgba(0,0,0,0.17), inset 0px -3px 0px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); -webkit-box-sizing: border-box; -webkit-border-radius: 3px; -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17), inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+}
+.title-how--name {
+	margin: 0px 0px 18px; line-height: 31px; font-size: 25px; font-weight: bold;
+}
+.title-how--item {
+	margin: 0px 0px 20px; padding: 0px 40px 0px 64px; width: 239px; line-height: 45px; position: relative; min-height: 45px; counter-increment: list; box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.title-how--item span {
+	line-height: 21px; vertical-align: middle; display: inline-block;
+}
+.title-how--item::before {
+	border-radius: 50%; left: 0px; top: 0px; width: 45px; height: 45px; text-align: center; color: rgb(255, 255, 255); font-size: 20px; font-weight: bold; position: absolute; content: counter(list); text-shadow: 1px 1px 1px rgba(0,0,0,0.2); background-image: linear-gradient(rgb(178, 217, 86), rgb(90, 174, 39)); background-color: rgb(178, 217, 86); -webkit-border-radius: 50%;
+}
+.title-bonus {
+	background: url("../images/title_bonus_back.jpg") no-repeat 0px 0px; margin: 0px auto; color: rgb(255, 255, 255); line-height: 23px; font-size: 16px; position: relative; min-height: 316px; max-width: 1600px;
+}
+.title-bonus::before {
+	background: url("../images/title_clock.png") no-repeat 0px 0px; margin: 0px 0px 0px 232px; left: 50%; top: 40px; width: 240px; height: 241px; position: absolute; content: "";
+}
+.title-bonus--in {
+	margin: 0px auto; padding: 65px 275px 59px 0px; width: 940px; box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.title-bonus--name {
+	margin: 0px 0px 17px; font-family: "Exo 2"; font-size: 25px; font-weight: bold;
+}
+.title-vopform {
+	background: url("../images/title_vop_back.png") repeat-x 0px 0px; margin: 0px auto; height: 164px; text-align: center; position: relative; max-width: 1600px;
+}
+.title-vopform--name {
+	padding: 36px 0px 25px; color: rgb(255, 255, 255); line-height: 27px; font-family: "Exo 2"; font-size: 25px; font-weight: bold;
+}
+.title-vopform--in {
+	margin: 0px auto; width: 980px; font-size: 0px;
+}
+.title-vopform .form-field {
+	margin: 0px 20px 0px 0px; width: 220px; display: inline-block;
+}
+.title-vopform :last-child.form-field {
+	margin: 0px;
+}
+.title-vopform .form-field .styler {
+	width: 100%;
+}
+.title-vopform .styler {
+	padding-left: 45px !important;
+}
+.title-reviews {
+	background: url("../images/title_reviews_bg.png") 0px 0px; padding: 35px 0px 40px; text-align: center; overflow: hidden; font-family: "Exo 2"; position: relative;
+}
+.title-reviews::before {
+	background: url("../images/title-shadow.png") no-repeat 50% 0px; margin: 0px 0px 0px -1002px; left: 50%; width: 2004px; height: 10px; bottom: 0px; position: absolute; content: "";
+}
+.title-reviews--in {
+	margin: 0px auto; width: 940px; text-align: left;
+}
+.title-reviews--name {
+	margin: 0px 0px 6px; color: rgb(63, 63, 63); line-height: 30px; font-size: 25px; font-weight: bold;
+}
+.title-reviews--link {
+	margin: 0px 0px 28px; line-height: 14px; font-size: 14px;
+}
+.title-reviews--link a {
+	color: rgb(37, 137, 198);
+}
+.title-reviews--image {
+	margin: 0px 25px 0px 0px; border-radius: 50%; border: 3px solid rgb(255, 255, 255); border-image: none; width: 84px; height: 84px; text-align: center; line-height: 78px; overflow: hidden; float: left; position: relative; box-sizing: border-box; box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.12); background-color: rgb(204, 204, 204); -webkit-box-sizing: border-box; -webkit-border-radius: 50%; -webkit-box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.title-reviews--image {
+	background: url("../images/avatar.jpg") no-repeat;
+}
+.title-reviews--image img {
+	border: 0px currentColor; border-image: none; margin-top: -4px; vertical-align: middle; display: inline-block; position: relative; z-index: 1; max-width: 100%;
+}
+.title-reviews--txt {
+	padding: 14px 20px 16px 22px; border-radius: 3px; width: 335px; color: rgb(63, 63, 63); line-height: 23px; font-size: 14px; float: left; position: relative; box-sizing: border-box; box-shadow: 1px 1px 3px rgba(0,0,0,0.17), inset 0px -3px 0px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); -webkit-box-sizing: border-box; -webkit-border-radius: 3px; -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.17), inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+}
+.title-reviews--txt::before {
+	background: url("../images/title_reviews_corner.png") no-repeat 0px 0px; left: -14px; top: 0px; width: 14px; height: 39px; position: absolute; content: "";
+}
+.title-reviews--txt_name {
+	margin: 0px 0px 9px; color: rgb(63, 63, 63); line-height: 20px; font-size: 16px; font-weight: bold;
+}
+.title-obj {
+	margin: 0px auto; padding: 33px 0px; width: 940px; line-height: 23px; font-family: "Exo 2"; font-size: 14px; position: relative;
+}
+.title-obj--left {
+	width: 610px; float: left;
+}
+.title-obj--right {
+	width: 290px; float: right;
+}
+.title-obj--name {
+	margin: 0px 0px 21px; color: rgb(63, 63, 63); line-height: 34px; font-size: 25px; font-weight: bold;
+}
+.title-obj--name a {
+	color: rgb(37, 137, 198); font-size: 14px; font-weight: normal;
+}
+.title-obj--object {
+	width: 290px; float: right;
+}
+:nth-child(2n+1).title-obj--object {
+	float: left;
+}
+.title-obj--object_image {
+	margin: 0px 0px 16px; height: 161px; overflow: hidden;
+}
+.title-obj--object_image img {
+	border-radius: 4px; max-width: 100%;
+}
+.title-obj--object_date {
+	color: rgb(160, 160, 160); line-height: 16px; font-size: 11px;
+}
+.title-obj--object_name {
+	color: rgb(63, 63, 63); line-height: 26px; font-size: 18px; font-weight: bold;
+}
+a.title-obj--object_name {
+	text-decoration: none;
+}
+.title-obj--object_name small {
+	line-height: 11px; font-size: 11px; font-weight: normal; display: block;
+}
+.title-promo {
+	margin: 0px 0px 0px 170px; padding: 20px; border-radius: 3px; left: 50%; top: 122px; width: 300px; height: 320px; color: rgb(63, 63, 63); line-height: 19px; font-family: "Exo 2"; font-size: 16px; position: absolute; box-sizing: border-box; box-shadow: 2px 1px 5px rgba(0,0,0,0.14); background-color: rgb(255, 255, 255); -webkit-box-sizing: border-box; -webkit-border-radius: 3px; -webkit-box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.14);
+}
+.title-promo--label {
+	background: url("../images/title_promo_lale.png") no-repeat 0px 0px; padding: 0px 0px 0px 20px; left: -12px; top: 20px; width: 114px; height: 40px; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 40px; font-size: 20px; font-weight: bold; position: absolute; box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.title-promo--name {
+	margin: 0px 0px 17px; padding: 0px 0px 0px 103px; color: rgb(63, 63, 63); line-height: 20px; font-size: 18px; font-weight: bold;
+}
+.title-promo--price {
+	width: 150px; line-height: 36px; font-size: 30px; font-weight: bold; float: left;
+}
+.title-promo--price small {
+	font-size: 14px;
+}
+.title-promo--old {
+	padding: 14px 0px 0px; width: 92px; text-align: center; color: rgb(187, 187, 187); line-height: 18px; font-size: 18px; float: left; position: relative;
+}
+.title-promo--old small {
+	font-size: 14px;
+}
+.title-promo--old::before {
+	background: rgb(245, 64, 48); left: 0px; top: 25px; width: 100%; height: 1px; position: absolute; content: "";
+}
+.title-promo--free {
+	padding: 9px 0px 16px; color: rgb(187, 187, 187); line-height: 16px; font-size: 14px;
+}
+.title-promo .blue {
+	width: 100px; font-size: 10px;
+}
+.title-promo .orange {
+	width: 145px; font-size: 10px;
+}
+.title-promo p {
+	margin: 0.4em 0px;
+}
+.title-promo .site-button a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.tariffs-top {
+	text-align: center; display: none;
+}

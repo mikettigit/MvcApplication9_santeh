@@ -1,0 +1,25 @@
+﻿<form method="post" action="/Home/Feedback">
+
+    <b>Ваше имя или название организации:</b><span style="color:red">*</span><br />
+    <input type="text" class="styler" size="30" maxlength="100" value="" name="clientName" id="d[0]" style="width:100%" />
+    <br /><small>Например: Иванов Иван / ООО МойДом</small>
+    <br /><br />
+
+
+    <b>Ваш E-mail или телефон:</b><span style="color:red">*</span><br />
+    <input type="text" class="styler" size="30" maxlength="100" value="" name="clientPhone" id="d[1]" style="width:100%" />
+    <br /><small>Например: ivanov@post.ru / + 7 000 1231212</small>
+    <br /><br />
+
+    <b>Комментарии:</b><span style="color:red">*</span><br />
+    <textarea class="styler" cols="50" rows="7" name="clientMessage" id="d[2]" style="width:100%"></textarea>
+    <br /><small>Напишите, пожалуйста, что Вас интересует</small><br /><br />
+
+    <div class="filesdiv"></div>
+
+    <input type="button" class="site-button blue AddFile" value="Добавить файл" />
+
+    <input type="button" class="site-button green FeedbackFormSubmit" value="Отправить!" />
+
+</form>
+

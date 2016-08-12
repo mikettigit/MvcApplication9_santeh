@@ -1,0 +1,27 @@
+﻿@using System.Web.Mvc
+@using MvcApplication9_santeh.Models
+
+@helper Phone()
+{      
+    SettingsModel settings = SettingsReturner.Get();       
+    @settings.Phone
+}
+
+@helper Phone2()
+{
+    SettingsModel settings = SettingsReturner.Get();
+    @settings.Phone2
+}
+
+@helper Email()
+{      
+    SettingsModel settings = SettingsReturner.Get();       
+    @settings.Email
+}
+
+@helper Address()
+{
+    SettingsModel settings = SettingsReturner.Get();       
+    @settings.Address
+}
+

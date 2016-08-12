@@ -1,0 +1,15 @@
+﻿@using MvcApplication9_santeh.Models
+@{
+    Post Post = (Post)ViewData["Post"];
+    ViewBag.Title = "";
+	ViewBag.MetaKeywords = "";
+    ViewBag.MetaDescription = "";
+    ViewBag.MetaTitle = Post.Meta_Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Post != null)
+{
+    @Html.Raw(Post.Content)
+}
+
