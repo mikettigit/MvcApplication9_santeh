@@ -1,4 +1,10 @@
-﻿<form method="post" action="/Home/Feedback">
+﻿<div class="templatefile fileline" style="display:none; width:100%;">
+    <input type='file' style="display:none;" />
+    <input type="text" class="styler" size="30" maxlength="100" value="" name="" style="display: inline-block; margin-bottom: 10px;" placeholder="Имя файла" readonly />
+    <input style='display:inline; margin-left:10px;' type='button' class='site-button red RemoveFile' value='x' /><br />
+</div>
+
+<form method="post" action="/Home/Feedback">
 
     <b>Ваше имя или название организации:</b><span style="color:red">*</span><br />
     <input type="text" class="styler" size="30" maxlength="100" value="" name="clientName" id="d[0]" style="width:100%" />

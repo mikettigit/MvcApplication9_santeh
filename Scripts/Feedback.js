@@ -177,8 +177,16 @@
             return false;
         }
         file_index++;
-        newfile = $("<div style='width:100%; margin-bottom:15px;'><input type='file' class='styler' style='display:inline; width:90%;' name='file" + file_index + "' id='file" + file_index + "'/><input style='display:inline; margin-left:10px;' type='button' class='site-button red RemoveFile' value='x' /><br/></div>");
-        newfile.appendTo($(".filesdiv"));
+        var newfile = $(".templatefile").clone().removeClass("templatefile").show();
+        newfile.find("input[type=file]").attr("name", "file" + file_index);
+        newfile.find("input[type=text]").click(function () {
+            var fileinput = $(this).parent().find("input[type=file]");
+            fileinput.change(function () {
+                newfile.find("input[type=text]").val($(this).val().split(/(\\|\/)/g).pop())
+            })
+            fileinput.click();
+        });
+        newfile.appendTo($(this).parents("form").find(".filesdiv"));
         return false;
     })
 
