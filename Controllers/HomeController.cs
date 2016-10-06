@@ -18,12 +18,14 @@ namespace MvcApplication9_santeh.Controllers
         public ActionResult Index()
         {
             ViewData["MainPage"] = true;
+            ViewData["Home"] = true;
             return View();
         }
 
         [AcceptVerbs(HttpVerbs.Get)]
         public ActionResult Feedback()
         {
+            ViewData["Home"] = true;
             return View();
         }
 
@@ -37,7 +39,18 @@ namespace MvcApplication9_santeh.Controllers
             try
             {
                 string InputFormattedString = collection["inputformattedstring"];
-                string subject = "Сообщение c сайта";
+                if (String.IsNullOrWhiteSpace(InputFormattedString))
+                {
+                    InputFormattedString += "URL: " + Request.Url.AbsoluteUri;
+                    InputFormattedString += "UserAgent: " + Request.UserAgent;
+                    string[] AllKeys = ((System.Collections.Specialized.NameValueCollection)(collection)).AllKeys;
+                    foreach (var key in AllKeys)
+                    {
+                        InputFormattedString += key + ": " + collection[key] + System.Environment.NewLine;
+                    }
+                }
+                System.Globalization.IdnMapping idn = new System.Globalization.IdnMapping();
+                string subject = "Сообщение c сайта " + idn.GetUnicode(Request.Url.Authority);
 
                 if (Convert.ToBoolean(ConfigurationManager.AppSettings["UseAgavaMail"]))
                 {

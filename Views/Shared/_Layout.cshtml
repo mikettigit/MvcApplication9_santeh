@@ -93,11 +93,14 @@
     <link rel="stylesheet" type="text/css" href="/scripts/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="/scripts/slick/slick-theme.css" />
 
+    <script src="/Scripts/Feedback.js"></script>
+
 </head>
 
 @{
     bool MainPage = ViewData["MainPage"] != null;
     bool HasRight = ViewData["HasRight"] != null;
+    bool Home = ViewData["Home"] != null;
 }
 
 <body class="sticky_header ok @(MainPage ? "page-main" : "") @(HasRight ? "has-right" : "")">
@@ -245,6 +248,17 @@
         <div style="margin-top:95px;">
             @RenderBody()
         </div>
+
+        @if (!Home) { 
+            <div class="title-promo" style="position: relative; left: auto; top: auto; height: auto; margin:0 auto 25px;">
+                <style>
+                    .fileline .styler {
+                        margin-left: auto !important;
+                    }
+                </style>
+                @{Html.RenderPartial("~/Views/Shared/Feedback2.cshtml");}
+            </div>
+        }
 
         @{Html.RenderPartial("Footer");}
     </div>
